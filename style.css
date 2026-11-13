@@ -62,6 +62,25 @@ header p {
 }
 
 /* ==========================================
+   PROFILE PHOTO
+========================================== */
+
+.profile-photo-container {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--background);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 5px 18px rgba(23,50,77,0.18);
+}
+
+/* ==========================================
    3. NAVIGATION BAR
 ========================================== */
 
@@ -606,6 +625,12 @@ footer p {
     .print-section button {
         width: 100%;
     }
+
+    /* Profile Photo Mobile Size */
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 /* ==========================================
@@ -622,6 +647,11 @@ footer p {
     header,
     footer,
     .print-section {
+        display: none !important;
+    }
+
+    /* Hide Profile Photo While Printing */
+    .profile-photo-container {
         display: none !important;
     }
 
